@@ -1,5 +1,7 @@
 const changeTitleColor = () => {
+  console.log('click')
   document.querySelector('h1').style.color='red';
 };
 
-document.getElementById('btn').addEventListener('click', changeTitleColor);
+document.querySelector('.btn').addEventListener('click', changeTitleColor);
+
