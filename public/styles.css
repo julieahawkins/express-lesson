@@ -1,5 +1,23 @@
+body.error {
+  background: darkgrey;
+}
+
 h1 {
   color: blue;
+  text-align: center;
+  margin: 20px;
+}
+
+h1.error {
+  font-family: sans-serif;
+  font-size: 70pt;
+  color: purple;
+  margin-top: 100px;
+}
+
+#nothing {
+  display: block;
+  font-family: cursive;
 }
 
 .sunsets {

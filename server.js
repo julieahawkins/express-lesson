@@ -27,6 +27,10 @@ app.get('/sunsets', (request, response) => {
   response.status(200).sendFile(path.join(__dirname, 'public', 'sunsets.html'));
 });
 
+app.use(function (req, res, next) {
+  res.status(404).sendFile(path.join(__dirname, 'public', '404.html'))
+});
+
 app.listen(3000, () => {
   console.log('Express Intro running on localhost:3000');
 });
