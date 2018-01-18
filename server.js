@@ -20,7 +20,7 @@ app.get('/', (request, response) => {
 });
 
 app.get('/json', (request, response) => {
-  response.status(200).json({"name": "JujuHawk"});
+  response.status(200).sendFile(path.join(__dirname, 'public', 'planets.json'));
 });
 
 app.get('/sunsets', (request, response) => {
